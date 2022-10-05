@@ -1,6 +1,6 @@
 # `TestingLogger` Example
 
-This GitHub repository provides an introduction to the `make` tool.
+This GitHub repository provides an introduction the CS 70 testing library.
 
 ## Examine, Compile and Run the Code
 
