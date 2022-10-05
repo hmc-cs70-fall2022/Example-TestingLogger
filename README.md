@@ -1,6 +1,6 @@
 # `TestingLogger` Example
 
-This GitHub repositor provides an introduction to the `make` tool.
+This GitHub repository provides an introduction to the `make` tool.
 
 ## Examine, Compile and Run the Code
 
@@ -22,7 +22,7 @@ In `test2` on the other hand, the failed `affirm` produces the message
 FAILURE (after 4 passes): example.cpp:23:       i < MAX
 ```
 
-It shows you which line of the file the problem was, and what the code that produced a false value was.  It will only print this message once however (the first time it fails).  Subsquent failures will be noted in the summary.
+It shows you which line of the file the problem was, and what the code that produced a false value was.  It will only print this message once however (the first time it fails).  Subsequent failures will be noted in the summary.
 
 When a test fails, the summary is more detailed, showing you a list of all the failures:
 
@@ -53,7 +53,7 @@ If the types being tested do not support printing (via `operator<<`), `affirm_ex
 
 So far, our examples of `affirm_expected` are just testing the value of an expression. Sometimes, however, we want to print something and see if it looks the way it is supposed to. We can achieve this goal by using C++'s `std::stringstream` class.
 
-Normally C++'s I/O streams read or write text fron/to files or to our terminal, but a `std::stringstream` instead targets an internal `std::string` object. When we write to a `std::stringstream` with `<<`, it adds our printed output characters to this string. `std::stringstream`'s `str()` function returns the contents of this string object.
+Normally C++'s I/O streams read or write text from/to files or to our terminal, but a `std::stringstream` instead targets an internal `std::string` object. When we write to a `std::stringstream` with `<<`, it adds our printed output characters to this string. `std::stringstream`'s `str()` function returns the contents of this string object.
 
 In `test5`, we print a string and a number to `ss` (which is a `std::stringstream`) . We then use `ss.str()` in `affirm_expected` to check that the string is what we expect it to be.
 
@@ -82,4 +82,4 @@ Fails   / Total Issue
 
 ## Conclusion
 
-The `TestingLogger` framework is specific to CS 70.  There are other testing frameworks for C++, but most of them have so many features that there is a lot to learn, and we want to focus on writing good test cases, not how to use a complicated testing framework.  With `TestingLoger`, most of the time `affirm_expected` is all you need. 
+The `TestingLogger` framework is specific to CS 70.  There are other testing frameworks for C++, but most of them have so many features that there is a lot to learn, and we want to focus on writing good test cases, not how to use a complicated testing framework.  With `TestingLogger`, most of the time `affirm_expected` is all you need. 
