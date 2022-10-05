@@ -2,12 +2,13 @@
 
 This GitHub repositor provides an introduction to the `make` tool.
 
-## Compile and Run the Code
+## Examine, Compile and Run the Code
 
-In the CS 70 docker image, run `make` or `cs70-make` to build the code.
+Load the code in _Visual Studio Code_ and briefly look over the code in `example.cpp`.
+
+Then, in the terminal (using CS 70 docker image), run `make` or `cs70-make` to build the code.
 
 Then run it with `./example`.  (Remember to scroll back up to see all the output if you're viewing it in a small window.)
-
 
 ## `affirm`
 
