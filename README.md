@@ -80,6 +80,11 @@ Fails   / Total Issue
 1       / 4     [test 4]
 ```
 
+### Running without any `TestingLogger`
+
+You can use `affirm` and `affirm_expected` even without a testing logger; but if there is no logger, they just abort the program with a message if a test files.  This behavior means that you can safely use `affirm` and `affirm_expected` in any CS 70 implementation code.
+
+
 ## Conclusion
 
 The `TestingLogger` framework is specific to CS 70.  There are other testing frameworks for C++, but most of them have so many features that there is a lot to learn, and we want to focus on writing good test cases, not how to use a complicated testing framework.  With `TestingLogger`, most of the time `affirm_expected` is all you need. 
