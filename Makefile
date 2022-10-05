@@ -11,8 +11,8 @@ TARGETS  = example
 
 CXX      = clang++
 CXXFLAGS = -gdwarf-4 -Wall -Wextra -pedantic -std=c++17
-CPPFLAGS =           # Used for -D, -isystem and -I preprocessor options
-LDFLAGS  =           # Used for -l  linking options
+CPPFLAGS =                  # Used for -D, -isystem and -I preprocessor options
+LDFLAGS  = -ltestinglogger  # Used for -l  linking options
 
 # Note: The rules below use useful-but-cryptic make "Automatic variables"
 #       to avoid duplicating information in multiple places, the most useful
